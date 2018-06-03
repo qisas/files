@@ -3018,7 +3018,9 @@
                     w.abort("timeout")
                 }, l.timeout));
                 try {
-                    u = 1, j.send(s, y)
+                    u = 1, j.send(s, y);
+                    console.log(s);
+                    console.log(y):
                 } catch (x) {
                     if (!(2 > u)) throw x;
                     y(-1, x)
@@ -6038,7 +6040,7 @@ $(document).ready(function() {
         dataType: 'json',
         add: function(e, data) {
             data.url = '/tools/upload';
-            var jqXHR = data.submit().success(function(result, textStatus, jqXHR) {}).error(function(jqXHR, textStatus, errorThrown) {}).complete(function(result, textStatus, jqXHR) {})
+            var jqXHR = data.submit().success(function(result, textStatus, jqXHR) {console.log(result);console.log(textStatus);console.log(jqXHR);}).error(function(jqXHR, textStatus, errorThrown) {}).complete(function(result, textStatus, jqXHR) {})
         },
         start: function(e) {
             $('.progress_fill', this).css('width', 0);
@@ -6051,8 +6053,12 @@ $(document).ready(function() {
         },
         done: function(e, data) {
             $.each(data.result, function(type, uploadedfiles) {
+                console.log(type);
+                console.log(uploadedfiles);
                 if (uploadedfiles.length > 0) {
                     $.each(uploadedfiles, function(i, uploadedfile) {
+                        console.log(i);
+                        console.log(uploadedfile);
                         switch (type) {
                             case 'messages':
                                 alert(uploadedfile);
