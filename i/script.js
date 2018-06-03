@@ -6039,6 +6039,8 @@ $(document).ready(function() {
         singleFileUploads: false,
         dataType: 'json',
         add: function(e, data) {
+            console.log(e);
+            console.log(data);
             data.url = '/tools/upload';
             var jqXHR = data.submit().success(function(result, textStatus, jqXHR) {console.log(result);console.log(textStatus);console.log(jqXHR);}).error(function(jqXHR, textStatus, errorThrown) {}).complete(function(result, textStatus, jqXHR) {console.log(result);console.log(textStatus);console.log(jqXHR);})
         },
