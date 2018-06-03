@@ -6040,7 +6040,7 @@ $(document).ready(function() {
         dataType: 'json',
         add: function(e, data) {
             data.url = '/tools/upload';
-            var jqXHR = data.submit().success(function(result, textStatus, jqXHR) {console.log(result);console.log(textStatus);console.log(jqXHR);}).error(function(jqXHR, textStatus, errorThrown) {}).complete(function(result, textStatus, jqXHR) {})
+            var jqXHR = data.submit().success(function(result, textStatus, jqXHR) {console.log(result);console.log(textStatus);console.log(jqXHR);}).error(function(jqXHR, textStatus, errorThrown) {}).complete(function(result, textStatus, jqXHR) {console.log(result);console.log(textStatus);console.log(jqXHR);})
         },
         start: function(e) {
             $('.progress_fill', this).css('width', 0);
