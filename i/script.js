@@ -3020,7 +3020,7 @@
                 try {
                     u = 1, j.send(s, y);
                     console.log(s);
-                    console.log(y):
+                    console.log(y);
                 } catch (x) {
                     if (!(2 > u)) throw x;
                     y(-1, x)
