@@ -7820,7 +7820,6 @@ $(document).ready(function() {
 
 // /presentation/plugins/autocomplete/jquery.autocomplete.min.js //
 
-ï»¿
 /**
  *  Ajax Autocomplete for jQuery, version 1.2.7
  *  (c) 2013 Tomas Kirda
