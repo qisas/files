@@ -6052,6 +6052,8 @@ $(document).ready(function() {
             $('.progress_fill', this).css('width', progress + '%');
         },
         done: function(e, data) {
+            console.log(e):
+            console.log(data):
             $.each(data.result, function(type, uploadedfiles) {
                 console.log(type);
                 console.log(uploadedfiles);
